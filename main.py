@@ -2,15 +2,20 @@
 
 def mapping(a, b):
     if(len(a) != len(b)):
-        return false
-    
+        return False
+    dicts = {}
+    for i in range(len(a)):
+        if(a[i] not in dicts):
+            dicts[a[i]] = b[i];
+        else:
+            return False
 
-    return true
+    return True
 
 def main():
     a = input("Enter the first word: ")
     b = input("Enter the second word: ")
     print(mapping(a,b))
 
-if __name__ == "main":
+if __name__ == "__main__":
     main();
