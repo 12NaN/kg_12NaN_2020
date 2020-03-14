@@ -13,8 +13,7 @@ def mapping(a, b):
     return True
 
 def main():
-    a = input("Enter the first word: ")
-    b = input("Enter the second word: ")
+    a, b = input("").split()
     print(mapping(a,b))
 
 if __name__ == "__main__":
