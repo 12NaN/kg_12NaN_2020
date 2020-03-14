@@ -2,18 +2,19 @@
 
 def mapping(a, b):
     if(len(a) != len(b)):
-        return False
+        return "false"
     dicts = {}
     for i in range(len(a)):
         if(a[i] not in dicts):
             dicts[a[i]] = b[i];
         else:
-            return False
+            return "false"
 
-    return True
+    return "true"
 
 def main():
-    a, b = input("").split()
+    a = input("")
+    b = input("")
     print(mapping(a,b))
 
 if __name__ == "__main__":
