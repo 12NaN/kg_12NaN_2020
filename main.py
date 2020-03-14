@@ -1,4 +1,5 @@
 # main.py
+import sys
 
 def mapping(a, b):
     if(len(a) != len(b)):
@@ -12,10 +13,5 @@ def mapping(a, b):
 
     return "true"
 
-def main():
-    a = input("")
-    b = input("")
-    print(mapping(a,b))
-
 if __name__ == "__main__":
-    main();
+    print(mapping(sys.argv[1], sys.argv[2]));
